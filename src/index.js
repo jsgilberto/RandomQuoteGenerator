@@ -32,7 +32,6 @@ class RandomQuoteMachine extends React.Component {
   }
 
   handleNewQuote() {
-    console.log(this);
     const self = this;
     fetch('https://talaikis.com/api/quotes/random/')
     .then(function(response) {
@@ -54,13 +53,14 @@ class RandomQuoteMachine extends React.Component {
   }
 
   render(){
-    
     return (
       <div id="quote-box">
         <p id="text">{this.state.quote}</p>
         <h1 id="author">{this.state.author}</h1>
-        <button onClick={this.handleNewQuote} id="new-quote">New Quote</button>
-        <button onClick={this.handleTweetQuote} id="tweet-quote">Tweet Quote</button>
+        <div id="buttons">
+          <button onClick={this.handleNewQuote} id="new-quote">New Quote</button>
+          <button onClick={this.handleTweetQuote} id="tweet-quote">Tweet Quote</button>
+        </div>
       </div>
     );
   }
