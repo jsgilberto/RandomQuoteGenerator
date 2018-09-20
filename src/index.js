@@ -23,7 +23,6 @@ class RandomQuoteMachine extends React.Component {
       return response.json();
     })
     .then(function(myJson) {
-      console.log(JSON.stringify(myJson));
       self.setState({
         quote: myJson.quote,
         author: myJson.author
@@ -38,7 +37,6 @@ class RandomQuoteMachine extends React.Component {
       return response.json();
     })
     .then(function(myJson) {
-      console.log(JSON.stringify(myJson));
       self.setState({
         quote: myJson.quote,
         author: myJson.author
