@@ -8,6 +8,8 @@ Make you sure you have installed Node (if not, you can download it from [here](h
 Clone the repo to your computer:
 ```
 $ git clone https://github.com/jsgilberto/RandomQuoteGenerator.git
+$ cd RandomQuoteGenerator
+$ npm install
 ```
 
 ## Usage
